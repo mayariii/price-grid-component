@@ -68,7 +68,7 @@ And finally tidied up the stylesheet and HTML.
 
 ### Issues I had:
 **Problem:**
-Tried to style the <span> within a <p> element to have a different opacity to the p, but it was inheriting the <p> opacity. 
+Tried to style the < span > within a < p > element to have a different opacity to the p, but it was inheriting the <p> opacity. 
 **Solution:**
 You can't overwrite an element's parent's property in CSS, so changed the content in the parent and vice versa. 
 
