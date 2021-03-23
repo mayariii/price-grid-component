@@ -117,13 +117,13 @@
 
  .sign-up-button {
      /* sizing */
-     width: 250px;
+     width: 245px;
      height: 48px;
 
      /* styling */
      background-color: hsL(71, 73%, 54%);
      border: none;
-     border-radius: 2px;
+     border-radius: 5px;
      box-shadow: 3px 8px 15px 1px rgba(0, 0, 0, 0.26);
      color: white;
      font-family: inherit;
@@ -216,7 +216,7 @@
      }
 
      .sign-up-button {
-         width: 250px;
+         width: 245px;
          height: 40px;
      }
 
