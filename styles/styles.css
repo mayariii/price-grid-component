@@ -1,27 +1,18 @@
  body {
      font-family: 'Karla',
-     sans-serif;
+         sans-serif;
      background-color: hsl(204, 43%, 93%);
 
-    /* flexbox properties */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     /* flexbox properties */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
- p, ul {
+ p,
+ ul {
      margin: 0;
  }
-
- ul.no-bullets {
-   list-style-type: none;
-   /* Remove bullets */
-   padding: 0;
-   /* Remove padding */
-   margin: 0;
-   /* Remove margins */
- }
-
 
  /* centres the card to centre of page */
  .centered {
@@ -31,59 +22,143 @@
      transform: translate(-50%, -50%);
  }
 
+ /* main card styling */
  .main-card {
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 635px;
-    height: 475px;
-    display: grid;
+     border-radius: 8px;
+     background-color: white;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     width: 635px;
+     height: 475px;
+     display: grid;
+     margin: auto;
 
  }
 
-  .whole-row {
-      grid-column-start: span 2;
-  }
 
+ /* SECTION CONTENT */
 
-/* media query to adjust width for mobile */
-@media (max-width: 376px) {
-    .main-card {
-        width: 311px;
-        height: 722px;
-    }
+ /* intro section (larger section) */
 
-    .whole-row {
-        grid-column-start: span 1;
-    } 
-
-    .pricing-section {
-        border-radius: 0;
-    }
-
-    .benefits-section {
-        border-radius: 0;
-    }
-}
+ /* makes the grid cell span 2 columns */
+ .whole-row {
+     grid-column-start: span 2;
+ }
 
  .intro-section {
-    padding: 20px;
+     padding: 20px;
  }
 
+ .intro-title {
+     color: hsl(179, 62%, 43%);
+     font-size: x-large;
+     font-weight: 700;
+     padding: 5px 5px 10px 15px;
+ }
+
+ .intro-subtitle {
+     color: hsl(71, 73%, 54%);
+     font-size: medium;
+     font-weight: 700;
+     padding: 5px 5px 5px 15px;
+ }
+
+ .intro-text {
+     color: hsl(218, 22%, 67%);
+     font-size: medium;
+     line-height: 26px;
+     letter-spacing: -0.2px;
+     padding: 5px 5px 5px 15px;
+ }
+
+ /* pricing section */
 
  .pricing-section {
-    background-color: hsl(179, 62%, 43%);
-    color: white;
-    padding: 20px;
-    border-radius: 0 0 0 5px;
+     background-color: hsl(179, 62%, 43%);
+     border-radius: 0 0 0 5px;
+     color: white;
+     padding: 20px;
  }
 
- .benefits-section {
-    background-color: hsl(179, 62%, 43%, 0.75);
-    color: white;
-    padding: 20px;
-    border-radius: 0 0 5px 0;
+ .pricing-title {
+     font-size: large;
+     font-weight: 700;
+     padding: 15px 15px 5px 15px;
  }
+
+ .pricing-data {
+     padding: 15px;
+ }
+
+ .price {
+     font-size: xx-large;
+     font-weight: 700;
+     opacity: 100%;
+ }
+
+ .pricing-frequency {
+     font-size: medium;
+     opacity: 50%;
+ }
+
+ .pricing-text {
+     font-size: medium;
+     padding: 0 15px 15px 15px;
+ }
+
+ .button-container {
+     margin-top: 25px;
+
+     /* flexbox properties*/
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .sign-up-button {
+     /* sizing */
+     width: 250px;
+     height: 48px;
+
+     /* styling */
+     background-color: hsL(71, 73%, 54%);
+     border: none;
+     border-radius: 2px;
+     box-shadow: 3px 8px 15px 1px rgba(0, 0, 0, 0.26);
+     color: white;
+     font-family: inherit;
+ }
+
+ .sign-up-button:hover {
+     box-shadow: 3px 8px 15px 1px rgba(255, 255, 255, 0.26);
+ }
+
+ /* benefits section */
+
+ .benefits-section {
+     background-color: hsl(179, 62%, 43%, 0.75);
+     border-radius: 0 0 5px 0;
+     color: white;
+     padding: 20px;
+ }
+
+ .benefits-title {
+     font-size: large;
+     font-weight: 700;
+     padding: 15px 15px 5px 15px;
+ }
+
+ .benefits-text {
+     font-size: medium;
+     padding: 15px;
+     opacity: 75%;
+ }
+
+ ul {
+     line-height: 25px;
+     list-style-type: none;
+ }
+
 
  /* front end mentor attribution */
  .attribution {
@@ -92,8 +167,93 @@
      text-align: center;
      padding: 5%;
      opacity: 50%;
+     position: absolute;
+     bottom: 80px;
  }
 
  .attribution a {
      color: black;
+ }
+
+ /* media query to adjust width for mobile */
+ @media (max-width: 376px) {
+     .main-card {
+         width: 311px;
+         height: 722px;
+         position: absolute;
+         top: 410px;
+         display: grid;
+         grid-template-rows: 1fr 1fr 1fr;
+     }
+
+     .whole-row {
+         grid-column-start: span 1;
+     }
+
+     /* adjust font sizes */
+
+     .intro-text,
+     .pricing-title,
+     .benefits-title {
+         font-size: medium;
+     }
+
+     .intro-subtitle,
+     .intro-text,
+     .pricing-text,
+     .benefits-text {
+         font-size: small;
+     }
+
+     /* styling tweaks */
+     .pricing-section {
+         border-radius: 0px;
+     }
+
+     .button-container {
+         margin-top: 0;
+         margin-bottom: 6px;
+     }
+
+     .sign-up-button {
+         width: 250px;
+         height: 40px;
+     }
+
+     .benefits-section {
+         border-radius: 0 0 5px 5px;
+     }
+
+     .benefits-title {
+         padding-top: 5px;
+
+     }
+
+     .benefits-text {
+         padding-bottom: 0;
+     }
+
+     .attribution {
+         bottom: 0px;
+     }
+
+ }
+
+ /* tweaks for smaller height phones e.g iPhone 6/7/8 */
+ @media (max-height: 677px) {
+
+     .main-card {
+         width: 311px;
+         height: 700px;
+         grid-template-rows: 1fr 1fr 241px;
+         top: 400px;
+     }
+
+     .benefits-text {
+         padding-top: 3px;
+     }
+
+     .attribution {
+         top: 3px;
+     }
  }
