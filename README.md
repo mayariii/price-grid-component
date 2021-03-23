@@ -28,8 +28,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/single-pricing-card-component-html-and-css-with-flexbox-and-grid-0YFT-MSj6](https://www.frontendmentor.io/solutions/single-pricing-card-component-html-and-css-with-flexbox-and-grid-0YFT-MSj6)
+- Live Site URL: [https://nicoleanalisecox.github.io/price-grid-component/](https://nicoleanalisecox.github.io/price-grid-component/)
 
 ## My process
 
