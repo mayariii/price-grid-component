@@ -40,14 +40,14 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### What I learned
 
-**Day 1: **
+** Day 1: **
 Set up stylesheet & basic HTML structure. Added background colours to body and divs. Created classes for the main sections.
 Played around with CSS grid for layout for the first time.
 These resources were useful:
 [Getting Started with CSS Grid](https://css-tricks.com/getting-started-css-grid/) 
 [CSS Grid Cheat Sheet Illustrated](https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3)
 
-**Day 2: **
+** Day 2: **
 Started to style the inner content (text & button) to align with the design. 
 You can get rid of the bullet points by using 'list-style-type: none;'
 Found from this resource: 
@@ -56,10 +56,10 @@ Found from this resource:
 Also, box-shadow generators have been useful.
 [Box-shadow Generator] (https://html-css-js.com/css/generator/box-shadow/)
 
-**Day 3: **
+** Day 3: **
 Looked into making it responsive for mobile. Had some spacing issues.
 
-**Day 4: **
+** Day 4: **
 Resolved spacing issues on mobile size. Added a simple hover effect to the button using the :hover selector.
 Resource here: [Hover selector] (https://www.w3schools.com/cssref/sel_hover.asp)
 Found this article for a fancy hover which might be nice for future projects. [Silky smooth box shadow] (https://tobiasahlin.com/blog/how-to-animate-box-shadow/)
