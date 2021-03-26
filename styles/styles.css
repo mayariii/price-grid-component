@@ -126,6 +126,7 @@
      border-radius: 5px;
      box-shadow: 3px 8px 15px 1px rgba(0, 0, 0, 0.26);
      color: white;
+     cursor: pointer;
      font-family: inherit;
  }
 
@@ -176,9 +177,8 @@
  }
 
  /* media query to adjust width for mobile */
- @media (max-width: 376px) {
+ @media (max-width: 730px) {
      .main-card {
-         width: 311px;
          height: 722px;
          position: absolute;
          top: 410px;
@@ -240,13 +240,14 @@
  }
 
  /* tweaks for smaller height phones e.g iPhone 6/7/8 */
- @media (max-height: 677px) {
+ @media (max-width: 677px) {
 
      .main-card {
          width: 311px;
          height: 700px;
          grid-template-rows: 1fr 1fr 241px;
          top: 400px;
+         
      }
 
      .benefits-text {
